@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import AttractionMain from './attractions/AttractionsMain';
+import Main from './landing/Main';
 import reportWebVitals from './reportWebVitals';
 import Toronto from './toronto/Toronto';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Toronto/>
+    <App/>
   </React.StrictMode>
 );
 

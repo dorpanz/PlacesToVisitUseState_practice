@@ -1,0 +1,10 @@
+.menu-bar{
+    background-color: rgb(241, 206, 161);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.links-item{
+    text-decoration: none;
+    color: black;
+}

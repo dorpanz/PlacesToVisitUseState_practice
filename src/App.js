@@ -1,13 +1,25 @@
 import './App.css';
-
+import Main from './landing/Main';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+}from "react-router-dom";
+import AttractionMain from './attractions/AttractionsMain';
 function App() {
   return (
     <div>
-      <h1>WHICH CITY ARE YOU TRAVELLING TO?</h1>
-      <button>TORONTO</button>
-      <button>VANCOUVER</button>
-      <button>OTTAWA</button>
-      <button>MONTREAL</button>
+      <Router>
+        <nav className="menu-bar">
+          <Link className='links-item' to="/">TORONTO EXPLORE</Link>
+          <Link className='links-item' to="/attractions">ATTRACTIONS</Link>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/attractions" element={<AttractionMain/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }
