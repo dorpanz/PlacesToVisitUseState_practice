@@ -2,12 +2,16 @@ import { useState } from "react"
 import phone3D from "../pictures/phone.png"
 import image from "../pictures/toronto_main.webp"
 import { data } from "../toronto/data.js"
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 
 import "./Main.css"
+import AttractionListing from "./AttractionsListing";
 function Main (){
     const [attractions, setAttractions] = useState(data)
+    const [showMore, setShowMore] = useState(false)
+    const showMoreText = (item) => {
+        item.showMore = !item.showMore;
+        setShowMore(!showMore)
+    }
     return (
         <div>
             <div className="container">
@@ -46,29 +50,7 @@ function Main (){
                 <h4>ATTRACTIONS</h4>
             </div>
             <hr/>
-            <div className="attraction-grid">
-            {attractions.slice(0,6).map((attraction)=> {
-                const { id, picture, title, description, typeofattraction} = attraction;
-                return (
-                <Card key={id} style={{ width: '400px' }} className="attarction-section-variamt">
-                    <Card.Img variant="top" src={picture} alt="attraction-{`${ title }`}" width="400px" height="300px"/>
-                    <Card.Body>
-                    <Card.Title className="title">{title}
-                    <div className="typeofattraction-name">{typeofattraction}</div>
-                    </Card.Title>
-                    <hr/>
-                    <Card.Text className="description-attraction">
-                    <p>{description}</p>
-                    </Card.Text>
-                    <div className="container">
-                    <Button variant="primary" className="btn-add">ADD TO YOUR LIST</Button>
-                    </div>
-                    </Card.Body>
-                </Card>
-                )
-            })}
-
-            </div>
+            <AttractionListing attractions={attractions} showMore={showMore} showMoreText={showMoreText}/>
             <div className="container">
                 <button className="btn-quiz">SEE MORE...</button>
             </div>
