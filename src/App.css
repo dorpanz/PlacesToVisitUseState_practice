@@ -1,10 +1,23 @@
-.menu-bar{
+.menu-bar {
     background-color: rgb(241, 206, 161);
-    padding: 20px;
+    padding: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Ensures space between the first and the rest of the links */
 }
-.links-item{
+
+.links-item {
+    font-size: 12px;
     text-decoration: none;
     color: black;
+    margin: 0 20px; /* Add some margin for spacing between the links */
+}
+
+.right-links {
+    display: flex; /* Ensure the right links are aligned horizontally */
+    margin-left: auto; /* Pushes the group of links to the right */
+}
+
+.homepage-link{
+    font-weight: 600;
+    letter-spacing: 2px;
 }

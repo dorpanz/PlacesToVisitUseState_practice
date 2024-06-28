@@ -7,7 +7,7 @@
 
 .btn-filter{
     padding: 10px;
-    width: 130px;
+    width: 190px;
     border-radius: 30px;
     border: 1px solid black;
 }
@@ -15,4 +15,9 @@
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
+}
+
+.btn-filter.active {
+    background-color: rgb(66, 94, 54); /* Change this color to whatever you prefer for the active state */
+    color: white; /* Optional: Change text color for better contrast */
 }

@@ -1,12 +1,37 @@
 import "./styles.css"
-function Filtering ({chosenCategory}){
+function Filtering ({handleClick, activeButton}){
     return (
         <div className="buttons-all-filter">
-            <button className="btn-filter" onClick={() => chosenCategory([])}>All</button>
-            <button className="btn-filter" onClick={() => chosenCategory(["Museum", "Castle"])}>Museums</button>
-            <button className="btn-filter" onClick={() => chosenCategory(["Garden", "Natural"])}>Nature</button>
-            <button className="btn-filter" onClick={() => chosenCategory(["Market", "district"])}>Market</button>
-            <button className="btn-filter" onClick={() => chosenCategory(["Aquarium", "Zoo", "Entertainment", "Rink", "Amusement", "Theatre", "Observation"])}>Entertainment</button>
+            <button
+                className={`btn-filter ${activeButton === '' ? 'active' : ''}`}
+                onClick={() => handleClick('')}
+            >
+                ALL
+            </button>
+            <button
+                className={`btn-filter ${activeButton === 'Museum' ? 'active' : ''}`}
+                onClick={() => handleClick('Museum')}
+            >
+                MUSEUMS
+            </button>
+            <button
+                className={`btn-filter ${activeButton === 'Nature' ? 'active' : ''}`}
+                onClick={() => handleClick('Nature')}
+            >
+                NATURE
+            </button>
+            <button
+                className={`btn-filter ${activeButton === 'Shopping' ? 'active' : ''}`}
+                onClick={() => handleClick('Shopping')}
+            >
+                SHOPPING
+            </button>
+            <button
+                className={`btn-filter ${activeButton === 'Entertainment' ? 'active' : ''}`}
+                onClick={() => handleClick('Entertainment')}
+            >
+                ENTERTAINMENT
+            </button>
         </div>
     )
 }

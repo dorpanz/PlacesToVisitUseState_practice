@@ -1,21 +1,35 @@
+*{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.main{
+    margin-top: 30px;
+}
+
 .container {
     display: flex;
     justify-content: center;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 350;
 }
-*{
-    font-family: "Josefin Sans", sans-serif;
-}
+
 h1 {
     letter-spacing: 60px;
-    font-size: 36px;
+    font-size: 26px;
     margin-left: 50px;
 }
 
-h3 {
+h2 {
     letter-spacing: 5px;
     margin: auto;
+    font-size: 18px;
+}
+
+h3 {
+    font-weight: 450;
+    letter-spacing: 5px;
+    margin: auto;
+    font-size: 16px;
 }
 
 img {
@@ -24,16 +38,16 @@ img {
 
 .about {
     background-color: beige;
-    font-size: 20px;
+    font-size: 18px;
     width:690px;
     padding: 10px;
+    text-align: center;
 }
 
 .quiz-try{
     margin-top: 30px;
     background-color: bisque;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px;
 }
 
 .container-quiz-try{
@@ -53,9 +67,14 @@ img {
     padding: 10px;
     width: 150px;
     border-radius: 40px;
+    background-color: bisque;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    border: 1px solid black;
 }
 
-.attraction-section {
+.attraction-section , .stories-section , .food-and-drink-section {
     margin-top: 50px;
 }
 
@@ -84,7 +103,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .typeofattraction-name{
@@ -100,4 +119,66 @@ h4 {
 .btn-add{
     padding: 10px;
     border-radius: 30px;
+}
+.price-address{
+    display: flex;
+    justify-content: space-between;
+}
+
+.displayStory{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    width:700px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+
+
+.titleStory{
+    background-color: azure;
+}
+
+.buttonStory{
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+.buttonStoryPrev{
+    margin-right: 10px;
+}
+
+.buttonStoryNext{
+    margin-left: 10px;
+}
+
+.readBtn{
+    padding: 10px;
+    background-color: blanchedalmond;
+    border-radius: 50px;
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.readBtn:hover{
+    background-color: rgb(134, 115, 82);
+}
+.storyCont{
+margin-top: 50px;
+}
+
+.seeMorebtn{
+    margin-top: 30px;
 }
