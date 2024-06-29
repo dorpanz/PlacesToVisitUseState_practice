@@ -10,6 +10,7 @@ import AttractionMain from './attractions/AttractionsMain';
 import ScrollToTop from './ScrollToTop';
 import { Fragment } from 'react';
 import FoodDrink from './foodbar/FoodDrink';
+import Quiz from './quiz/Quiz';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <div className="right-links">
             <Link className='links-item' to="/attractions">ATTRACTIONS</Link>
             <Link className='links-item' to="/food-and-drink">FOOD AND DRINK</Link>
-            <Link className='links-item' to="/stories-about-toronto">QUIZ</Link>
+            <Link className='links-item' to="/quiz">QUIZ</Link>
         </div>
         </nav>
         <Fragment>
@@ -29,9 +30,15 @@ function App() {
             <Route path="/" element={<Main />} />
             <Route path="/attractions" element={<AttractionMain />} />
             <Route path="/food-and-drink" element={<FoodDrink/>} />
+            <Route path="/quiz" element={<Quiz/>}/>
           </Routes>
         </Fragment>
       </Router>
+      <div>
+        <footer className="footer">
+          <p>Copyright © 2024 Toronto Explore</p>
+        </footer>
+      </div>
     </div>
   );
 }

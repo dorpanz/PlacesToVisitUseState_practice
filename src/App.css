@@ -1,5 +1,5 @@
 .menu-bar {
-    background-color: rgb(241, 206, 161);
+    background-color: rgb(161, 186, 241);
     padding: 30px;
     display: flex;
     justify-content: space-between; /* Ensures space between the first and the rest of the links */
@@ -20,4 +20,32 @@
 .homepage-link{
     font-weight: 600;
     letter-spacing: 2px;
+}
+.footer{
+    background-color: rgb(161, 186, 241);
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+fieldset{
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.quiz{
+    margin-top: 50px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-quiz-top{
+    margin-top: 20px;
+}
+
+.result{
+    text-align: center;
+    margin-top: 20px;
 }

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { stories } from "../all-data/stories";
-import { Link }from "react-router-dom";
 
 function Stories(){
     const [story, setStory] = useState(0);
@@ -32,8 +31,8 @@ function Stories(){
             <div>
                 <h2 className="titleStory">{title}</h2>
             </div>
-            <div>
-                <p>{fact}</p>
+            <div className="factStory">
+                <div>{fact}</div>
             </div>
 
             </div>

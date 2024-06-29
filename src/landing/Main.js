@@ -45,12 +45,16 @@ function Main (){
                     <h2>TRY NEW FEATURE</h2>
                 </div>
                 <div className="container-quiz-try">
-                    <p className="about-quiz">Embark on a journey of discovery with our "Wanderlust quiz" feature! Unsure where to explore next? Take our fun and interactive quiz to uncover your perfect travel destination. Answer a few simple questions, and let our algorithm match you with the ideal spot based on your preferences and interests.</p>
+                    <div className="about-quiz">
+                        <div className="textQuizAbout">Unsure where to explore next? </div>
+                        <div className="textQuizAboutTwo">Take our fun and interactive quiz to uncover your perfect travel destination.</div>
+                        
+                    </div>
                     
                     <img src={phone3D} alt="3D-phone-with-swipe" width="250px"/>
                 </div>
                 <div className="container">
-                <button className="btn-quiz">TRY OUT NOW</button>
+                <Link to="/quiz" className="btn-quiz">TRY OUT NOW</Link>
                 </div>
             </div>
                 

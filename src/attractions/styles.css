@@ -18,6 +18,6 @@
 }
 
 .btn-filter.active {
-    background-color: rgb(66, 94, 54); /* Change this color to whatever you prefer for the active state */
-    color: white; /* Optional: Change text color for better contrast */
+    background-color: rgb(174, 189, 244); /* Change this color to whatever you prefer for the active state */
+    color: rgb(0, 0, 0); /* Optional: Change text color for better contrast */
 }
